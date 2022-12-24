@@ -20,8 +20,8 @@ $(function () {
                 "margin": "0 0 8px -180px",
                 "border-radius": "5px"
             })
-            $('.notification_main-'+number).addClass('main')
-            $('.text-'+number).css({
+            $('.notification_main-' + number).addClass('main')
+            $('.text-' + number).css({
                 "font-size": "11px"
             })
 
@@ -54,14 +54,6 @@ $(function () {
                 })
                 $(`.notification_main-${number}`).addClass('warning-icon')
                 $(`.wrapper-${number}`).addClass('warning')
-                sound.play();
-            } else if (event.data.type == 'sms') {
-                $(`.title-${number}`).html(event.data.title).css({
-                    "font-size": "16px",
-                    "font-weight": "600"
-                })
-                $(`.notification_main-${number}`).addClass('sms-icon')
-                $(`.wrapper-${number}`).addClass('sms')
                 sound.play();
             } else if (event.data.type == 'long') {
                 $(`.title-${number}`).html(event.data.title).css({

@@ -33,10 +33,13 @@ if (Config.TestCommand.Enable) then
         jaNotify = exports['ja-notify']
 
         jaNotify:Notify("SUCCESS", "<span style='color:#fff'>All is nice.</span>!", 5000, 'success')
+
         jaNotify:Notify("INFORMATION",
             "<span style='color:#fff'>Server restart in <span style='color:#ff0000'>5 minutes</span>!", 5000, 'info')
+
         jaNotify:Notify("ERROR",
             "<span style='color:#fff'>You don't have <span style='color:#ff0000'>permissions.</span>!", 5000, 'error')
-        jaNotify:         Notify("SAVED", "<span style='color:#c7c7c7'>Clothes saved successfully!", 5000, 'long')
+
+        jaNotify:Notify("SAVED", "<span style='color:#c7c7c7'>Clothes saved successfully!", 5000, 'long')
     end)
 end
