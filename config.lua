@@ -1,6 +1,6 @@
 Config = {
     TestCommand = {
         Enable = true,
-        Name = 'tet'
+        Name = 'test'
     }
 }
